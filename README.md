@@ -54,4 +54,4 @@ tmux new -d -s schemathesis 'sh run_schemathesis.sh "5 hours"'
 tmux new -d -s tcases 'sh run_tcases.sh "5 hours"'
 ```
 
-After 5 hours, you can get the result by typing python3 main.py. 1.csv and bug1.txt are the results.
+After 5 hours, you can get the result by typing python3 main.py in the /gitlab-ee-8.15 directory. 1.csv and bug1.txt are the results of coverage and bug report.
