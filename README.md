@@ -2,8 +2,10 @@
 
 First, you need to download and run our docker image. The Docker socket should be bind-mounted to run Docker inside Docker.
 
+```
 docker pull qrntkd3/icse
 docker run -v {your docker.sock location}:/run/docker.sock --network="host" -it qrntkd3/icse /bin/bash
+```
 Then, please set environment variables and run the tool and service.
 
 ```
