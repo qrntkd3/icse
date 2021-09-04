@@ -29,11 +29,11 @@ for example, python3 get_html_report.py /rest/benchmarks/em/embedded/rest/catwat
 ```
 cd /gitlab-ee-8.15
 sh setup1.sh
-echo "sudo docker cp gitlab.rb gitlab:/etc/gitlab/gitlab.rb"
-echo "sudo docker exec gitlab gitlab-ctl reconfigure"
-echo "sudo docker exec -it gitlab bash"
-echo "gitlab-rails console"
-echo "user = User.find_by_username('root')"
+docker cp gitlab.rb gitlab:/etc/gitlab/gitlab.rb
+docker exec gitlab gitlab-ctl reconfigure
+docker exec -it gitlab bash
+gitlab-rails console
+user = User.find_by_username('root')
 ```
 Terminal will print the root information which include authentication token. Please copy it and replace the token to /gitlab-ee-8.15/run_dredd.sh and /gitlab-ee-8.15/token.py.
 
